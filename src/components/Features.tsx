@@ -36,10 +36,10 @@ const Features = () => {
           className="flex flex-col sm:w-1/2 w-full  justify-center items-start space-y-4 sm:mt-0 mt-8 "
           data-aos="flip-left"
         >
-          <h2 className="font-bold sm:text-3xl text-2xl">
+          <h2 className="font-bold sm:text-3xl text-2xl font-primary">
             We provide Many features you can use
           </h2>
-          <ul className="space-y-2 sm:text-lg text-[15px] font-semibold text-gray-500">
+          <ul className="space-y-2 sm:text-lg text-[15px] font-semibold text-gray-500 font-primary">
             <li className="flex items-center ">
               <Check className="check" /> A VPN encrypts your internet traffic.
             </li>

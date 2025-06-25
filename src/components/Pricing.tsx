@@ -7,8 +7,8 @@ const Pricing = () => {
   return (
     <section className="px-4 mt-14 flex flex-col items-center " id="Pricing">
       <div className="flex space-y-2 flex-col items-center">
-        <h1 className="font-bold text-2xl">Choose Your Plan</h1>
-        <p>Explore different plans that suits you!</p>
+        <h1 className="font-bold text-2xl md:text-4xl">Choose Your Plan</h1>
+        <p className="font-primary">Explore different plans that suits you!</p>
       </div>
       <div className="flex md:flex-row flex-col space-x-6 justify-around w-full mt-14 ">
         {pricing.map((card, index) => (

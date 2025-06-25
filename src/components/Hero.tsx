@@ -5,7 +5,6 @@ import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
 gsap.registerPlugin(SplitText);
-
 const Hero = () => {
   useGSAP(() => {
     const tl = gsap.timeline({ defaults: { duration: 1 } });
@@ -23,10 +22,10 @@ const Hero = () => {
         className=" w-full sm:w-1/2 items-start space-y-6 mt-4"
         data-aos="fade-right"
       >
-        <h1 className=" hero_heading hero">
+        <h1 className=" hero_heading hero ">
           Want anything to be easy with VPN
         </h1>
-        <p className=" leading-relaxed text-[15px] md:text-[25px] lg:text-xl para ">
+        <p className=" leading-relaxed text-[15px] md:text-[25px] lg:text-xl para font-primary">
           A VPN, or Virtual Private Network, is a service that creates a secure,
           encrypted connection over the internet.
         </p>
