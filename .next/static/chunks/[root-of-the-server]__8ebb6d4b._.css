@@ -162,7 +162,6 @@
     --radius-md: .375rem;
     --radius-lg: .5rem;
     --radius-xl: .75rem;
-    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary: #ed3500;
@@ -488,10 +487,6 @@
     margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
-
   .rounded-full {
     border-radius: 3.40282e38px;
   }
@@ -500,15 +495,11 @@
     border-radius: var(--radius-lg);
   }
 
-  .rounded-md {
-    border-radius: var(--radius-md);
-  }
-
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
 
-  .border, .border-1 {
+  .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
