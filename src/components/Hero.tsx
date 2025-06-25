@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import feature from "../../public/images/banner.png";
 import { useAOS } from "@/lib/aos";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
@@ -35,13 +33,14 @@ const Hero = () => {
         <button className="get_started">Get Started</button>
       </div>
       <div className=" flex  w-full sm:w-1/2  justify-center items-center mt-8">
-        <Image
-          data-aos="fade-up"
-          src={feature}
-          alt="Hero"
-          width={400}
-          height={400}
-        ></Image>
+        <iframe
+          width="560"
+          height="315"
+          className="border-1 rounded-lg"
+          src="https://www.youtube.com/embed/_wQTRMBAvzg?si=WvhnnGgwCeKUoaZI"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        ></iframe>
       </div>
     </div>
   );
