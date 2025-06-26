@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Box from "../../public/images/box.png";
@@ -17,7 +18,8 @@ const Pricing = () => {
             <h2 className="font-bold text-2xl">{card.title}</h2>
             <ul className="pricing_list">
               <li className="flex items-center">
-                <Check className="check" />{card.features[0]}
+                <Check className="check" />
+                {card.features[0]}
               </li>
               <li className="flex items-center">
                 <Check className="check" />

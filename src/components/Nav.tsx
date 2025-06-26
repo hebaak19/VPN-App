@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import {useTranslations} from 'next-intl';
 import Image from "next/image";
 import Logo from "../../public/images/logo.png";
 import { useGSAP } from "@gsap/react";
@@ -7,6 +8,7 @@ import gsap from "gsap";
 import { Link } from "react-scroll";
 
 const Nav = () => {
+  const t = useTranslations('HomePage');
   useGSAP(() => {
     gsap.from(".nav_list", {
       y: "-100%",
@@ -28,7 +30,7 @@ const Nav = () => {
             src={Logo}
             className="logo"
           ></Image>
-          <span className="text-primary font-primary">VPN</span>
+          <span className="text-primary font-primary">{t('title')}</span>
         </div>
         <ul className=" space-x-4  hidden sm:flex ">
           <li className="nav_list">
